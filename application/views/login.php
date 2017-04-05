@@ -8,9 +8,9 @@
 	<title>东阳三建--登录</title>
 
 	<!-- Bootstrap -->
-	<link href="/build_backend/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/build_backend/public/css/login.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/build_backend/public/alert/css/jquery.alertable.css">
+	<link href="/forum/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/forum/public/css/login.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/forum/public/alert/css/jquery.alertable.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,13 +41,13 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/build_backend/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/forum/bootstrap/js/bootstrap.min.js"></script>
 	<!-- 弹出框 -->
-	<script src='/build_backend/public/alert/js/velocity.min.js'></script>
-	<script src='/build_backend/public/alert/js/velocity.ui.min.js'></script>   
-	<script src="/build_backend/public/alert/js/jquery.alertable.js"></script>
+	<script src='/forum/public/alert/js/velocity.min.js'></script>
+	<script src='/forum/public/alert/js/velocity.ui.min.js'></script>   
+	<script src="/forum/public/alert/js/jquery.alertable.js"></script>
 	<!-- 登陆验证 -->
-	<script type="text/javascript" src="/build_backend/public/js/login.js"></script>
+	<script type="text/javascript" src="/forum/public/js/login.js"></script>
 	<script type="text/javascript">
 		function error(error_massage){
 			$.alertable.alert(error_massage , {

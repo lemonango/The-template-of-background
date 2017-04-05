@@ -9,7 +9,7 @@ $(document).ready(function(){
 			error('账号或密码格式不正确');
 		}else{
 			$.ajax({
-				url:'/build_backend/index.php/welcome/logIn',
+				url:'/forum/index.php/welcome/logIn',
 				type:'post',
 				data:{
 					account: account,
@@ -19,7 +19,7 @@ $(document).ready(function(){
 					if(result == 1){
 						error('用户不存在');
 					}else{
-						self.location = "/build_backend/index.php/backend/Backend";
+						self.location = "/forum/index.php/backend/Backend";
 					}
 				}
 			});
