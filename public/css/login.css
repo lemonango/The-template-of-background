@@ -1,0 +1,61 @@
+body,html{
+	height: 100%;
+	margin: 0;
+
+}
+body{
+	min-height: 100%;
+	position: relative;
+	background: #F1F4F9;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.login{
+	width: 32%;
+	min-width: 250px;
+	margin: auto;
+	position: relative;	
+	top: 100px;
+}
+.title{
+	text-align: center;
+}
+.title h2{
+	font-size: 2.5rem;
+	color: #6c6c6c;
+}
+.account,.password{
+	margin-top: 2rem;
+	width: 100%;
+}
+.account input,.password input{
+	width: 100%;
+	display: block;
+	height: 40px;
+	border-radius: 5px !important;
+}
+.forget{
+	margin-top: .5rem;
+	text-align: right;
+}
+.forget a{
+	color:#747474;
+	font-size: 1.4rem;
+}
+.sub{
+	margin-top: 1rem;
+	width: 100%;
+	text-align: center;
+}
+.sub button{
+	display: block;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #1DB198;
+	background: #1DB198;
+}
+.sub p{
+	color: #747474;
+	margin-top: .8rem;
+}

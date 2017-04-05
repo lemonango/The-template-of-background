@@ -1,0 +1,111 @@
+body,html{
+	margin: 0;
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	position: relative;
+	background: #F1F4F9;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.main{
+	overflow: hidden;
+	padding: 0;
+}   
+
+.left,.right{ 
+	height: auto; 
+	margin-bottom: -10000px; 
+	padding-bottom: 10000px; 
+}   
+.left{ 
+	display: inline; 
+	float: left; 
+	width: 200px; 
+	background: #fff; 
+	border-right: 1px solid #e2ebf2;
+}   
+.right{ 
+	overflow: hidden;
+	background-color: #eff4fa;
+}
+.logo{
+	text-align: center;
+	color: #fff;
+	background-color: #556676;
+	padding: 1.8rem 0;
+}
+.logo h1{
+	margin: 0;
+	font-size: 2rem;
+}
+.logo h1 a{
+	color: #fff;
+	text-decoration: none;
+}
+.home{
+	overflow: hidden;
+}
+.home a{
+	display: block;
+	padding-top: 1.5rem;
+	padding-left: 4rem;
+	color: #8ca1b4;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+.list{
+	margin-top: .8rem;
+	border-top: 1px solid #dee3e9;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.list li{
+	border-bottom: 1px solid #dee3e9
+}
+.list li a{
+	color: #596979;
+	display: block;
+	padding-left: 4rem;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+.list li a:hover{
+	background-color: #f5f9fc;
+	color: #596979;
+}
+.glyphicon{
+	margin-right: 1rem;
+}
+.top{
+	display: block;
+	padding: 1.8rem 0;
+	background: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #e2ebf2;
+}
+.top a{
+	color: #91a4b5;
+}
+.top a i{
+	margin-left: 1rem;
+}
+.drow{
+	float: left;
+}
+.infor{
+	float: right;
+}
+.admin{
+	float: left;
+}
+.logOut{
+	margin-left: 1rem;
+	float: right;
+	margin-right: .8rem;
+}
