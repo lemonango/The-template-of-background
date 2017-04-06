@@ -79,6 +79,10 @@ ul{
 	background-color: #f5f9fc;
 	color: #596979;
 }
+.list_select{
+	background-color: #f5f9fc;
+	color: #596979;
+}
 .glyphicon{
 	margin-right: 1rem;
 }
@@ -109,3 +113,27 @@ ul{
 	float: right;
 	margin-right: .8rem;
 }
+.bread{
+	padding-top: 1rem;
+	padding-bottom: .2rem;
+}
+.breadcrumb{
+	background-color: #eff4fa;
+	margin-bottom:0;
+}
+.breadcrumb a{
+	text-decoration: none;
+}
+.content{
+	margin: 0 1rem 1rem 1rem;
+	background: #fff;
+	padding:  0 1rem 1rem 1rem;
+	border: 1px solid #dee3e9;
+}
+.contain{
+	padding-top: 1rem;
+}
+.input-group{
+	margin-bottom: 1rem;
+}
+

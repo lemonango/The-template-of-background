@@ -4,9 +4,12 @@
 		function __construct(){
 			parent::__construct();
 			$this->load->model('Backend_model','bakend');
+			$this->load->model('Logo_model','logo');
+			$this->load->model('Infor_model','infor');
+			$this->load->model('Login_model','login');
 			$result = $this->session->userdata('user');
 			if($result == null ){
-				redirect('/build_backend/index.php/welcome');
+				redirect('/forum/index.php/welcome');
 			}
 		}
 	}

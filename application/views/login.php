@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-	<title>东阳三建--登录</title>
+	<title>XX论坛--登录</title>
 
 	<!-- Bootstrap -->
 	<link href="/forum/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 <body>
 	<div class="login">
 		<div class="title">
-			<h2>东阳三建后台管理系统</h2>
+			<h2>XX论坛后台管理系统</h2>
 		</div>
 		<div class="account input-group" >
 			<input type="text" class="form-control" id="account" maxlength="15" placeholder="Username" aria-describedby="basic-addon1">
@@ -34,7 +34,7 @@
 		</div>
 		<div class="sub">
 			<button id="logIn">登录</button>
-			<p class="text-center m-t-xs text-sm">2017 © 东阳三建后台管理系统.</p>
+			<p class="text-center m-t-xs text-sm">2017 ©XX论坛后台管理系统.</p>
 		</div>
 	</div>
 

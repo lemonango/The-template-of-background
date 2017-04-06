@@ -38,7 +38,7 @@
 					<li>
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>用户管理</a>
 					</li>
-					<li>
+					<li class="list_select">
 						<a href="/forum/index.php/logo/Logo"><i class="glyphicon glyphicon-tag"></i>Logo标题</a>
 					</li>
 					<li>
@@ -62,18 +62,48 @@
 					<a href="javascript:void(0)" onclick="showSider()"><i class="glyphicon glyphicon-align-justify"></i></a>
 				</div>
 				<div class="infor">
-					<div class="admin"><a href="javascript:void(0)"><?php echo $user['user_name'] ?></a></div>
+					<div class="admin"><a href="javascript:void(0)">admin</a></div>
 					<div class="logOut"><a href="javascript:void(0)"><i class="glyphicon glyphicon-log-in"></i></a></div>
 				</div>
 			</div>
 			<div class="bread">
 				<ol class="breadcrumb">
-					<li class="active">首页</li>
-					<li class="active">welcome</li>
+					<li><a href="/forum/index.php/backend/Backend">首页</a></li>
+					<li class="active">logo标题</li>
 				</ol>
 			</div>
 			<div class="content">
-				
+				<div class="contain">
+					<div class="table-responsive">
+						<table class="table table-th-block table-hover">
+							<thead>
+								<tr>
+									<th>标题</th>
+									<th>图片</th>
+									<th>更新时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach ($logo as $key => $logoInfo): ?>
+									<tr>
+										<td><?php echo $logoInfo['logo_name'] ?></td>
+										<td><img height="15%" width="20%" src="<?php echo $logoInfo['logo_img'] ?>" data-toggle="modal" data-target=".bs-example-modal-lg-<?php echo $logoInfo['logo_id'] ?>"></td>
+										<td><?php echo $logoInfo['logo_date'] ?></td>
+										<td><a href="javascript:void(0)">修改</a></td>
+									</tr>
+									<div class="modal fade bs-example-modal-lg-<?php echo $logoInfo['logo_id'] ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<img width="100%" height="250" src="<?php echo $logoInfo['logo_img'] ?>">
+											</div>
+										</div>
+									</div>
+								<?php endforeach ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -89,8 +119,6 @@
 	<script src='/forum/public/alert/js/velocity.min.js'></script>
 	<script src='/forum/public/alert/js/velocity.ui.min.js'></script>   
 	<script src="/forum/public/alert/js/jquery.alertable.js"></script>
-	<!-- 登陆验证 -->
-	<script type="text/javascript" src="/forum/public/js/login.js"></script>
 	<script type="text/javascript">
 		function error(error_massage){
 			$.alertable.alert(error_massage , {

@@ -12,7 +12,7 @@
 			$account = $this->input->post('account');
 			$password = $this->input->post('password');
 			$info['user_account'] = $account;
-			$info['user_pwd'] = $password;
+			$info['user_password'] = $password;
 			$result = $this->login->validateAccount($info);
 			if($result == null || $result == ''){
 				$error = 1;
