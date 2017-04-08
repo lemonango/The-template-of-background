@@ -13,10 +13,10 @@
 	<link rel="stylesheet" type="text/css" href="/forum/public/alert/css/jquery.alertable.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div class="main">
@@ -38,7 +38,7 @@
 					<li>
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>用户管理</a>
 					</li>
-					<li>
+					<li class="list-select">
 						<a href="/forum/index.php/logo/Logo"><i class="glyphicon glyphicon-tag"></i>Logo标题</a>
 					</li>
 					<li>
@@ -62,18 +62,7 @@
 					<a href="javascript:void(0)" onclick="showSider()"><i class="glyphicon glyphicon-align-justify"></i></a>
 				</div>
 				<div class="infor">
-					<div class="admin"><a href="javascript:void(0)"><?php echo $user['user_name'] ?></a></div>
+					<div class="admin"><a href="javascript:void(0)">admin</a></div>
 					<div class="logOut"><a href="javascript:void(0)"><i class="glyphicon glyphicon-log-in"></i></a></div>
 				</div>
 			</div>
-			<div class="bread">
-				<ol class="breadcrumb">
-					<li class="active">首页</li>
-					<li class="active">welcome</li>
-				</ol>
-			</div>
-			<div class="content">
-				
-			</div>
-		</div>
-		<?php $this->load->view('footer') ?>

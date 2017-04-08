@@ -79,16 +79,16 @@ ul{
 	background-color: #f5f9fc;
 	color: #596979;
 }
-.list_select{
+.list-select{
 	background-color: #f5f9fc;
-	color: #596979;
+	color: #596979;	
 }
 .glyphicon{
 	margin-right: 1rem;
 }
 .top{
 	display: block;
-	padding: 1.8rem 0;
+	padding: 1.85rem 0;
 	background: #fff;
 	overflow: hidden;
 	border-bottom: 1px solid #e2ebf2;
@@ -117,23 +117,32 @@ ul{
 	padding-top: 1rem;
 	padding-bottom: .2rem;
 }
-.breadcrumb{
-	background-color: #eff4fa;
-	margin-bottom:0;
-}
-.breadcrumb a{
-	text-decoration: none;
-}
 .content{
 	margin: 0 1rem 1rem 1rem;
 	background: #fff;
 	padding:  0 1rem 1rem 1rem;
-	border: 1px solid #dee3e9;
+}
+.breadcrumb{
+	background-color: #eff4fa;
+	margin-bottom:0;
+}
+.prompt{
+	padding-top: 1rem;
 }
 .contain{
 	padding-top: 1rem;
 }
-.input-group{
+.add{
 	margin-bottom: 1rem;
 }
+.update{
+	padding-top: 1.5rem;
+}
+.input-group{
+	margin-bottom: 1.5rem;
+}
+.input-group span{
+	min-width: 7rem;
+}
+
 

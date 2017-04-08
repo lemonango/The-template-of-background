@@ -5,11 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-	<title>XX论坛--首页</title>
+	<title>东阳三建--logo</title>
 
 	<!-- Bootstrap -->
 	<link href="/forum/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/forum/public/css/backend.css" rel="stylesheet">
+	<link href="/forum/public/css/infor.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/forum/public/alert/css/jquery.alertable.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,7 @@
 	<div class="main">
 		<div class="left">
 			<div class="logo">
-				<h1><a href="/forum/index.php/backend/Backend">XX论坛</a></h1>
+				<h1><a href="/forum/index.php/backend/Backend">东阳三建</a></h1>
 			</div>
 			<div class="home">
 				<a href="/forum/index.php/backend/Backend">首页</a>
@@ -62,18 +63,7 @@
 					<a href="javascript:void(0)" onclick="showSider()"><i class="glyphicon glyphicon-align-justify"></i></a>
 				</div>
 				<div class="infor">
-					<div class="admin"><a href="javascript:void(0)"><?php echo $user['user_name'] ?></a></div>
+					<div class="admin"><a href="/forum/index.php/infor/Infor"><?php echo $user['user_name'] ?></a></div>
 					<div class="logOut"><a href="javascript:void(0)"><i class="glyphicon glyphicon-log-in"></i></a></div>
 				</div>
 			</div>
-			<div class="bread">
-				<ol class="breadcrumb">
-					<li class="active">首页</li>
-					<li class="active">welcome</li>
-				</ol>
-			</div>
-			<div class="content">
-				
-			</div>
-		</div>
-		<?php $this->load->view('footer') ?>

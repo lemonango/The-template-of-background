@@ -5,5 +5,10 @@
 			$result = $this->db->where($data)->get('logo')->result_array();
 			return $result;
 		}
+		/*修改logo*/
+		public function updateLogo($info,$data){
+			$result = $this->db->where($info)->update('logo',$data);
+			return $result;
+		}
 	}
  ?>

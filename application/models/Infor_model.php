@@ -5,5 +5,6 @@
 			$result = $this->db->where($info)->update('user',$data);
 			return $result;
 		}
+		
 	}
  ?>

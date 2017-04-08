@@ -12,6 +12,18 @@
 			$data['logo'] = $this->logo->obtainLogo($logoData);
 			$this->load->view('logo/logo',$data);
 		}
+		/*修改logo*/
+		public function updateLogo(){
+			$result = $this->session->userdata('user');
+			/*获取用户信息*/
+			$userdata['user_id'] = $result['user_id'];
+			$user = $this->bakend->obtainUser($userdata);
+			$data['user'] = $user[0];
+			/*获取logo标题*/
+			$logoData['logo_state'] = 1;
+			$data['logodate'] = $this->logo->obtainLogo($logoData);
+			$this->load->view('logo/updateLogo',$data);
+		}
 	}	
  ?>
 

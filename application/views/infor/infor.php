@@ -31,69 +31,28 @@
 			<div class="list">
 				<ul>
 					<li class="list-select">
-						<a href="/forum/index.php/infor/Infor">
-							<i class="glyphicon glyphicon-user"></i>个人信息
-						</a>
+						<a href="/forum/index.php/infor/Infor"><i class="glyphicon glyphicon-user"></i>个人信息</a>
 					</li>
 					<li>
-						<a href="/forum/index.php/infor/Infor/resetPassword">
-							<i class="glyphicon glyphicon-cog"></i>密码管理
-						</a>
+						<a href="/forum/index.php/infor/Infor/resetPassword"><i class="glyphicon glyphicon-cog"></i>密码管理</a>
 					</li>
 					<li>
-						<a href="/forum/index.php/carousel/Carousel">
-							<i class="glyphicon glyphicon-tag"></i>Logo标题
-						</a>
+						<a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>用户管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-picture"></i>轮播图管理
-						</a>
+						<a href="/forum/index.php/logo/Logo"><i class="glyphicon glyphicon-tag"></i>Logo标题</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-signal"></i>分类信息
-						</a>
+						<a href="javascript:void(0)"><i class="glyphicon glyphicon-book"></i>帖子管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-tasks"></i>企业资质
-						</a>
+						<a href="javascript:void(0)"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-leaf"></i>关于三建
-						</a>
+						<a href="javascript:void(0)"><i class="glyphicon glyphicon-duplicate"></i>广告管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-random"></i>企业荣誉
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-stats"></i>新闻管理
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-th-large"></i>项目管理
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-cloud"></i>人才理念
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-retweet"></i>招聘活动
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<i class="glyphicon glyphicon-comment"></i>联系我们
-						</a>
+						<a href="javascript:void(0)"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
 					</li>
 				</ul>
 			</div>
@@ -137,37 +96,4 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="bottom">
-		
-	</div>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/forum/bootstrap/js/bootstrap.min.js"></script>
-	<!-- 弹出框 -->
-	<script src='/forum/public/alert/js/velocity.min.js'></script>
-	<script src='/forum/public/alert/js/velocity.ui.min.js'></script>   
-	<script src="/forum/public/alert/js/jquery.alertable.js"></script>
-	<!-- 展开 -->
-	<script type="text/javascript" src="/forum/public/js/isshow.js"></script>
-	<script type="text/javascript" src="/forum/public/js/infor.js"></script>
-	<!-- 弹出框 -->
-	<script type="text/javascript">
-		function error(error_massage){
-			$.alertable.alert(error_massage , {
-				show: function() {
-					$(this.overlay).velocity('transition.fadeIn');        
-					$(this.modal).velocity('transition.flipBounceYIn');
-				},
-				hide: function() {
-					$(this.overlay).velocity('transition.fadeOut');
-					$(this.modal).velocity('transition.perspectiveUpOut');
-				} 
-			});
-		}
-	</script>
-</body>
-</html>
+<?php $this->load->view('footer') ?>
