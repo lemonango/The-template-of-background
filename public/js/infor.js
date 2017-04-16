@@ -1,23 +1,23 @@
 $(document).ready(function(){
 	$('#save').click(function(){
-		var user_account = $('#user_account').val();
-		var user_name = $('#user_name').val();
-		var user_phone = $('#user_phone').val();
-		var user_address = $('#user_address').val();
+		var adn_account = $('#adn_account').val();
+		var adn_name = $('#adn_name').val();
+		var adn_phone = $('#adn_phone').val();
+		var adn_address = $('#adn_address').val();
 		account_msg = /^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){4,19}$/;
-		if(user_account == '' || user_name == '' || user_phone == '' || user_address == '' || user_account == null || user_name == null || user_phone == null || user_address == null){
+		if(adn_account == '' || adn_name == '' || adn_phone == '' || adn_address == '' || adn_account == null || adn_name == null || adn_phone == null || adn_address == null){
 			error('请填写完整');
-		}else if(account_msg.test(user_account) == false){
+		}else if(account_msg.test(adn_account) == false){
 			error('账号格式不正确');
 		}else{
 			$.ajax({ 
 				url:'/forum/index.php/infor/Operation/updateInfor',
 				type:'post',
 				data:{
-					user_account:user_account,
-					user_name:user_name,
-					user_phone:user_phone,
-					user_address:user_address
+					adn_account:adn_account,
+					adn_name:adn_name,
+					adn_phone:adn_phone,
+					adn_address:adn_address
 				},
 				success:function(result){
 					if(result == 0){

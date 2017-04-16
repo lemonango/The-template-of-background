@@ -123,4 +123,76 @@ $(document).ready(function(){
 		}
 	});
 });
+/*新闻分类*/
+$(document).ready(function(){
+	$('#uploadType').click(function(){
+		var type_name = $('#type_name').val();
+		if(type_name == null || type_name == ''){
+			error('分类名不能为空');
+		}else{
+			$.ajax({
+				url:'/forum/index.php/type/Operation/uploadType',
+				type:'post',
+				data:{
+					type_name:type_name
+				},
+				success:function(result){
+					if(result == 2){
+						error('分类名已存在');
+					}else if(result == 1){
+						error('保存失败');
+					}else{
+						self.location = '/forum/index.php/type/Type';
+					}
+				}
+			});
+		}
+	});
+});
+function deleteType(type_id){
+	var r = confirm('确认删除');
+	if(r == true){
+		$.ajax({
+			url:'/forum/index.php/type/Operation/deleteType',
+			type:'post',
+			data:{
+				type_id:type_id
+			},
+			success:function(result){
+				if(result == 2){
+					error('该分类已删除');
+				}else if(result == 1){
+					error('删除失败');
+				}else{
+					location.reload();
+				}
+			}
+		});
+	}
+}
+$(document).ready(function(){
+	$('#updateType').click(function(){
+		var type_name = $('#type_name').val();
+		var type_id = $('#type_id').val();
+		if(type_name == null || type_name == ''){
+			error('分类名不能为空');
+		}else{
+			$.ajax({
+				url:'/forum/index.php/type/Operation/updateType',
+				type:'post',
+				data:{
+					type_name:type_name,
+					type_id:type_id
+				},
+				success:function(result){
+					if(result == 1){
+						error('修改失败');
+					}else{
+						self.location = '/forum/index.php/type/Type';
+					}
+				}
+			});
+		}
+	});
+})
 

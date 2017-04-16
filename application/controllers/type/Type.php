@@ -1,5 +1,5 @@
 <?php 
-class Category extends MY_Controller{
+class Type extends MY_Controller{
 	/*分类信息*/
 	public function index(){
 		$result = $this->session->userdata('admin');
@@ -8,13 +8,13 @@ class Category extends MY_Controller{
 		$user = $this->bakend->obtainUser($userdata);
 		$data['admin'] = $user[0];
 		/*获取分类信息*/
-		$info['cty_state'] = 1;
+		$info['type_state'] = 1;
 		/*载入分页类*/
 		$this->load->library('pagination');
 		/*配置项*/
 		$perPage=5;
 		$config['base_url'] = '/forum/index.php/category/Category/index';
-		$config['total_rows'] = $this->db->where($info)->count_all_results('category');
+		$config['total_rows'] = $this->db->where($info)->count_all_results('type');
 		$config['per_page'] = $perPage;
 		$config['uri_segment']=4;
 		$config['first_link']='首页';
@@ -37,32 +37,30 @@ class Category extends MY_Controller{
 		$offset=$this->uri->segment(4);
 		$this->db->limit($perPage,$offset);
 		$data['links']=$this->pagination->create_links();
-		$category = $this->category->obtainCategory($info);
-		$data['category'] = $category;
-		$this->load->view('category/category',$data);
+		$type = $this->type->obtainType($info);
+		$data['type'] = $type;
+		$this->load->view('type/type',$data);
 	}
 	/*上传分类名*/
-	public function uploadCategory(){
-		/*获取用户信息*/
+	public function uploadType(){
 		$result = $this->session->userdata('admin');
 		/*获取用户信息*/
 		$userdata['adn_id'] = $result['adn_id'];
 		$user = $this->bakend->obtainUser($userdata);
 		$data['admin'] = $user[0];
-		$this->load->view('category/uploadCategory',$data);
+		$this->load->view('type/uploadType',$data);
 	}
 	/*修改分类名*/
-	public function updateCategory($cty_id){
-		/*获取用户信息*/
+	public function updateType($type_id){
 		$result = $this->session->userdata('admin');
 		/*获取用户信息*/
 		$userdata['adn_id'] = $result['adn_id'];
 		$user = $this->bakend->obtainUser($userdata);
 		$data['admin'] = $user[0];
 		/*获取分类信息*/
-		$info['cty_id'] = $cty_id;
-		$data['category'] = $this->category->obtainCategory($info);
-		$this->load->view('category/updateCategory',$data);
+		$info['type_id'] = $type_id;
+		$data['type'] = $this->type->obtainType($info);
+		$this->load->view('type/updateType',$data);
 	}
 }
 ?>

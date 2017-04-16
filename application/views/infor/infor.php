@@ -46,13 +46,13 @@
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-book"></i>帖子管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
+						<a href="/forum/index.php/category/Category"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-duplicate"></i>广告管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
+						<a href="/forum/index.php/type/Type"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
 					</li>
 				</ul>
 			</div>
@@ -63,7 +63,7 @@
 					<a href="javascript:void(0)" onclick="showSider()"><i class="glyphicon glyphicon-align-justify"></i></a>
 				</div>
 				<div class="infor">
-					<div class="admin"><a href="/forum/index.php/infor/Infor"><?php echo $user['user_name'] ?></a></div>
+					<div class="admin"><a href="/forum/index.php/infor/Infor"><?php echo $admin['adn_name'] ?></a></div>
 					<div class="logOut"><a href="javascript:void(0)"><i class="glyphicon glyphicon-log-in"></i></a></div>
 				</div>
 			</div>
@@ -77,19 +77,19 @@
 				<div class="update">
 					<div class="input-group">
 						<span class="input-group-addon" id="basic-addon1">账号</span>
-						<input type="text" class="form-control" id="user_account" value="<?php echo $user['user_account'] ?>" aria-describedby="basic-addon1">
+						<input type="text" class="form-control" id="adn_account" value="<?php echo $admin['adn_account'] ?>" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group">
 						<span class="input-group-addon" id="basic-addon1">姓名</span>
-						<input type="text" class="form-control" id="user_name" value="<?php echo $user['user_name'] ?>" aria-describedby="basic-addon1">
+						<input type="text" class="form-control" id="adn_name" value="<?php echo $admin['adn_name'] ?>" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group">
 						<span class="input-group-addon" id="basic-addon1">手机号</span>
-						<input type="text" class="form-control" id="user_phone" value="<?php echo $user['user_phone'] ?>" aria-describedby="basic-addon1">
+						<input type="text" class="form-control" id="adn_phone" value="<?php echo $admin['adn_phone'] ?>" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group">
 						<span class="input-group-addon" id="basic-addon1">地址</span>
-						<input type="text" class="form-control" id="user_address" value="<?php echo $user['user_address'] ?>" aria-describedby="basic-addon1">
+						<input type="text" class="form-control" id="adn_address" value="<?php echo $admin['adn_address'] ?>" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group">
 						<button class="save btn btn-primary" id="save">保存</button>

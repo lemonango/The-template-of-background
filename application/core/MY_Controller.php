@@ -7,7 +7,9 @@
 			$this->load->model('Logo_model','logo');
 			$this->load->model('Infor_model','infor');
 			$this->load->model('Login_model','login');
-			$result = $this->session->userdata('user');
+			$this->load->model('Category_model','category');
+			$this->load->model('Type_model','type');
+			$result = $this->session->userdata('admin');
 			if($result == null ){
 				redirect('/forum/index.php/welcome');
 			}

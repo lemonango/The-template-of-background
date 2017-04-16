@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-	<title>XX论坛--首页</title>
+	<title>XX论坛--Logo</title>
 
 	<!-- Bootstrap -->
 	<link href="/forum/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,13 +45,13 @@
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-book"></i>帖子管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
+						<a href="/forum/index.php/category/Category"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-duplicate"></i>广告管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
+						<a href="/forum/index.php/type/Type"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
 					</li>
 				</ul>
 			</div>
@@ -62,7 +62,7 @@
 					<a href="javascript:void(0)" onclick="showSider()"><i class="glyphicon glyphicon-align-justify"></i></a>
 				</div>
 				<div class="infor">
-					<div class="admin"><a href="javascript:void(0)">admin</a></div>
+					<div class="admin"><a href="javascript:void(0)"><?php echo $admin['adn_name'] ?></a></div>
 					<div class="logOut"><a href="javascript:void(0)"><i class="glyphicon glyphicon-log-in"></i></a></div>
 				</div>
 			</div>

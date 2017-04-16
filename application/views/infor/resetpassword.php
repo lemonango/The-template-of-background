@@ -46,13 +46,13 @@
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-book"></i>帖子管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
+						<a href="/forum/index.php/category/Category"><i class="glyphicon glyphicon-stats"></i>帖子分类</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)"><i class="glyphicon glyphicon-duplicate"></i>广告管理</a>
 					</li>
 					<li>
-						<a href="javascript:void(0)"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
+						<a href="/forum/index.php/type/Type"><i class="glyphicon glyphicon-ice-lolly"></i>广告分类</a>
 					</li>
 				</ul>
 			</div>
@@ -63,7 +63,7 @@
 					<a href="javascript:void(0)" onclick="showSider()"><i class="glyphicon glyphicon-align-justify"></i></a>
 				</div>
 				<div class="infor">
-					<div class="admin"><a href="/forum/index.php/infor/Infor"><?php echo $user['user_name'] ?></a></div>
+					<div class="admin"><a href="/forum/index.php/infor/Infor"><?php echo $admin['adn_name'] ?></a></div>
 					<div class="logOut"><a href="javascript:void(0)"><i class="glyphicon glyphicon-log-in"></i></a></div>
 				</div>
 			</div>

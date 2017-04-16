@@ -1,14 +1,14 @@
-<?php 	$this->load->view('category/header') ?>
+<?php 	$this->load->view('type/header') ?>
 <div class="bread">
 	<ol class="breadcrumb">
 		<li><a href="/forum/index.php/backend/Backend">首页</a></li>
-		<li class="active">修改分类</li>
+		<li class="active">新闻分类</li>
 	</ol>
 </div>
 <div class="content">
 	<div class="contain">
 		<div class="add">
-			<button class="btn btn-primary" onclick="redirct('/forum/index.php/category/Category/uploadCategory')"><i class="glyphicon glyphicon-plus"></i>添加</button>
+			<button class="btn btn-primary" onclick="redirct('/forum/index.php/type/Type/uploadType')"><i class="glyphicon glyphicon-plus"></i>添加</button>
 		</div>
 		<div class="table-responsive">
 			<table class="table table-th-block table-hover">
@@ -21,14 +21,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach ($category as $key => $cty): ?>
+					<?php foreach ($type as $key => $types): ?>
 						<tr>
-							<td><?php echo $cty['cty_id'] ?></td>
-							<td><?php echo $cty['cty_name'] ?></td>
-							<td><?php echo $cty['cty_date'] ?></td>
+							<td><?php echo $types['type_id'] ?></td>
+							<td><?php echo $types['type_name'] ?></td>
+							<td><?php echo $types['type_date'] ?></td>
 							<td>
-								<a href="javascript:void(0)"  onclick="update('/forum/index.php/category/Category/updateCategory','<?php echo $cty['cty_id'] ?>')">修改</a>
-								<a href="javascript:void(0)" onclick="deleteCategory('<?php echo $cty['cty_id'] ?>')">删除</a>
+								<a href="javascript:void(0)"  onclick="update('/forum/index.php/type/Type/updateType','<?php echo $types['type_id'] ?>')">修改</a>
+								<a href="javascript:void(0)" onclick="deleteType('<?php echo $types['type_id'] ?>')">删除</a>
 							</td>
 						</tr>
 					<?php endforeach ?>

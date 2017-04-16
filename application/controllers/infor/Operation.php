@@ -3,13 +3,13 @@
 		/*修改信息*/
 		public function updateInfor(){
 			$user = $_POST;
-			$result = $this->session->userdata('user');
-			$info['user_id'] = $result['user_id'];
+			$result = $this->session->userdata('admin');
+			$info['adn_id'] = $result['adn_id'];
 			$data = array(
-				'user_account' => $user['user_account'],
-				'user_name' => $user['user_name'],
-				'user_phone' => $user['user_phone'],
-				'user_address' => $user['user_address']
+				'adn_account' => $user['adn_account'],
+				'adn_name' => $user['adn_name'],
+				'adn_phone' => $user['adn_phone'],
+				'adn_address' => $user['adn_address']
 				);
 			$row = $this->infor->updateInfor($info,$data);
 			if($row == 0){
@@ -18,7 +18,7 @@
 			}else{
 				/*获取用户信息*/
 				$userDate = $this->login->validateAccount($info);
-				$this->session->set_userdata('user',$userDate[0]);
+				$this->session->set_userdata('admin',$userDate[0]);
 				$error = 0;
 				print_r($error);exit;
 			}
@@ -26,15 +26,15 @@
 		/*修改密码*/
 		public function resetPassword(){
 			$user = $_POST;
-			$result = $this->session->userdata('user');
-			$info['user_id'] = $result['user_id'];
+			$result = $this->session->userdata('admin');
+			$info['adn_id'] = $result['adn_id'];
 			$userData = $this->bakend->obtainUser($info);
-			if($user['password'] != $userData[0]['user_password']){
+			if($user['password'] != $userData[0]['adn_password']){
 				$error = 2;
 				print_r($error);exit;
 			}else{
 				$userInfo = array(
-					'user_password' => $user['newPassword']
+					'adn_password' => $user['newPassword']
 					);
 				$row = $this->infor->updateInfor($info,$userInfo);
 				if($row == 1){
